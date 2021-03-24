@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
+    <script src="static/js/script.js"></script>
+</head>
+
+<body>
+    <div class="container" id="cv">
+        <div class="side">
+            <div class="me">
+                <div class="portrait"></div>
+                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
+                    <h3>请输入图片URL地址：</h3>
+                    <br/>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div>
+                <h1 id="username" >孙海鑫</h1>
+                <h4 id="persona-tag" >Java/ Web / 后端开发</h4>
+            </div>
+            <div class="profile info-unit">
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">姓名</label><span class="label-value">孙海鑫</span></li>
+                    <li>
+                        <label class="left-label">学历</label><span class="label-value">大专</span></li>
+                    <li>
+                        <label class="left-label">毕业院校</label><span class="label-value">黑龙江林业职业技术学院</span></li>
+                    <li>
+                        <label class="left-label">毕业年份</label><span class="label-value">2022</span></li>
+                </ul>
+            </div>
+            <div class="contact info-unit">
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <hr>
+                <ul class="info-list">
+                    <li>
+                        <label class="left-label">手机</label><span class="label-value">13204584401</span></li>
+                    <li>
+                        <label class="left-label">邮箱</label><span class="label-value">13204584401@163.com</span></li>
+                </ul>
+            </div>
+            <div class="skill info-unit">
+                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
+                <hr>
+                <ul class="progress-list">
+                    <li>
+                        <label class="left-label">Java基础知识</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">html5/css</label>
+                        <progress value="80" max="100"></progress>
+                    </li>
+					<li>
+					    <label class="left-label">JavaScript</label>
+					    <progress value="80" max="100"></progress>
+					</li>
+                    <li>
+                        <label class="left-label">Mysql数据库</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label class="left-label">Linux基础操作</label>
+                        <progress value="50" max="100"></progress>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="stack info-unit">
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <hr>
+                <ul class="stack-list">
+                    <li>
+                        <label class="left-label">前端</label><span class="label-value">HTML5、CSS、JavaScript、jQuery、Ajax</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">后端</label><span class="label-value">基于JSP+Servlet的JavaWeb项目的开发。</span></li>
+                    </li>
+                    <li>
+                        <label class="left-label">框架</label><span class="label-value">Spring、SpringMvc、Mybatis开源框架。</span></li>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code info-unit">
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <hr>
+                <div class="weixin">
+                    <img src="static/image/weixin.png" alt="">
+
+                </div>
+            </div>
+            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
+                <h3>请输入图片URL地址：</h3>
+                <br/>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>黑龙江林业职业技术学院- 软件技术专业2019-2022</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>项目管理系统</h3>
+                        <p>
+                            <b>项目描述：</b><br>
+							为公司开发的项目管理系统，对公司项目的计划、任务的进度以及开发人员进行管理 ，从而达到对项目整体的全面控制与掌握。模块包括项目管理、人员管理、个人管理、客户管理消息管理。<br>
+                            <b>项目技术：</b><br>
+							项目基于J2SE平台,B/S模式开发.应用Tomcat服务器、MySql数据库、Myeclipse、运用JSP、Servlet、JavaScript、反射机制、Annotation、数据库连接池、工厂模式、Ajax、JQuery等技术。<br>
+                            <b>责任描述：</b><br>
+							<b>1.个人管理模块</b><br>
+                            (1)个人信息管理<br>
+                            对登录用户的信息查看，并可以对其中的基本信息进行修改操作<br>
+                            (2)任务信息管理<br>
+                            登录用户可以访问自己的任务列表，并对任务的详细信息进行查询，同时还可以对已完成的任务进行任务的提交。<br>
+                            <b>2.项目需求管理模块</b><br>
+                            可以查询所有的需求，并查看需求所属的项目，对需求的增删查改等操作。<br>
+                        <br/>
+                        </p>
+                    </li>
+                    <li>
+                        <h3>欣欣超市进销存管理系统</h3>
+                        <p>
+                          <b> 项目描述：</b><br>
+						  此项目是基于B/S架构下的超市管理系统，开发超市进销存管理系统不但可以简化超市的日常管理，并且可以减少员工的工作量，在提高效率的同时压缩了成本，是超市必不可少的管理工具。<br>
+                           <b>项目技术：</b><br>Sprng+SpringMvc+Mybatis，JSTL，Ajax，jQuery等<br>
+                           <b>责任描述：</b><br>
+						   <b>1.登录模块：</b><br>
+                           管理员在登录的状态下才可以进行超市的进销存管理，管理员登录	后，登录信息会存入session中，管理员退出登录，session销毁。<br>
+                           <b>2.进货管理：</b><br>
+                           选择左侧菜单栏中的进货管理，选择进货信息，显示进货信息界面。在进货管理界面，可以根据订单id、商品名称、商品id、进货日期对商品进	行综合查询。查询出来的信息进行分页显示，对每一个查询到的信息可以	进行修改、删除操作。<br>
+                           <b>3.商品信息管理：</b><br>
+                           对商品信息进行全部查询显示，也可以按照商品类型、商品id、商品名	称、供应商名称进行商品信息综合查询。对查询出来的商品信息进行分页	显示，并可以对商品信息进行修改、删除操作。<br>
+                        </p>
+                    </li>
+        
+                </ul>
+            </div>
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3>2020年获国家励志奖学金</h3>
+                    </li> 
+                    <li>
+                        <h3>2020年获1+X前端证书</h3>
+                    </li>               
+            </div>
+            <div class="aboutme info-unit right-paragraph">
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <hr>
+                <p>
+					本人性格开朗、正直善良、做事踏实稳重、能吃苦耐劳。<br>
+					工作认真负责，具有强烈的责任感，善于思考，能独立分析和解决问题。<br>
+					善于自我总结，及时的纠正错误。<br>
+					诚实守信、具有良好的时间观念，有良好的团队精神和实际动手能力。<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
